@@ -702,6 +702,15 @@
             background: var(--color-accent-primary);
             opacity: 0.2;
             border-radius: var(--radius-full);
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: drawLine 1s ease 0.9s forwards;
+        }
+        
+        @keyframes drawLine {
+            to {
+                transform: scaleX(1);
+            }
         }
         
         .hero-description {
